@@ -17,8 +17,8 @@ const Biography = () => {
             Biography
           </h2>
           <p>
-            Hello, I'm Tan Nguyen; you may refer to me as Winston. I'm a
-            frontend developer dedicated to crafting visually appealing and
+            Hello, I&apos;m Tan Nguyen; you may refer to me as Winston. I&apos;m
+            a frontend developer dedicated to crafting visually appealing and
             functional digital experiences. In every project I undertake, I
             consistently seek innovative approaches to actualize the visions of
             my clients with a committment to design excellence.

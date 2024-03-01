@@ -8,7 +8,7 @@ const AnimatedNumber = ({ value }) => {
 
   useEffect(() => {
     mValue.set(value);
-  }, []);
+  }, [mValue, value]);
 
   useMotionValueEvent(sValue, "change", (latestValue) => {
     if (cValue.current && latestValue.toFixed() <= value) {

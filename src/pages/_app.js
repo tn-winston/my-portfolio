@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Winston's Portfolio</title>
+        <title>Winston&apos;s Portfolio</title>
       </Head>
       <div className="w-full bg-light-theme font-montserrat text-neutral-700">
         <Layout>
