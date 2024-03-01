@@ -7,7 +7,7 @@ import cssIcon from "./CSS.svg";
 import jsIcon from "./JS.svg";
 import tsIcon from "./TypeScript.svg";
 import nextJSIcon from "./NextJS.svg";
-import nodeJSIcon from "./NodeJs.svg";
+import nodeJSIcon from "./NodeJS.svg";
 import javaIcon from "./Java.svg";
 import pgsqlIcon from "./PGSQL.svg";
 import gitIcon from "./Git.svg";
