@@ -1,11 +1,13 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const fadeInContainer = {
-  initial: {},
+  initial: { opacity: 0 },
   animate: {
+    opacity: 1,
     transition: {
-      delay: 0.5,
+      delay: 0.1,
       staggerChildren: 0.2,
     },
   },
@@ -21,7 +23,8 @@ const AnimatedText = ({ text }) => {
     <motion.div
       variants={fadeInContainer}
       initial="initial"
-      animate="animate"
+      whileInView="animate"
+      viewport={{ once: true }}
       className="flex flex-wrap items-center text-5xl font-semibold capitalize text-neutral-800"
     >
       {text.split(" ").map((word, index) => (

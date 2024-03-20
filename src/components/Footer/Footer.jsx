@@ -4,7 +4,7 @@ const year = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <footer className="flex w-full snap-end justify-center gap-60 rounded-t-3xl border-t border-neutral-200 bg-pink-50 py-1.5 text-neutral-500">
+    <footer className="flex w-full snap-end justify-center gap-60 rounded-t-3xl border-t border-neutral-200 bg-pink-50 py-1.5 font-medium text-neutral-500">
       <span>{year}&nbsp;&copy;&nbsp;All Rights Reserved</span>
       <span>
         Email:&nbsp;
