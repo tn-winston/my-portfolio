@@ -12,8 +12,8 @@ const Biography = () => {
         <AnimatedText text="Innovate, Iterate, Inspire" />
       </div>
       <div className="grid w-full grow grid-cols-9 gap-8 px-24">
-        <div className="col-span-3 flex flex-col items-start gap-3">
-          <h2 className="text-lg font-bold uppercase text-neutral-800">
+        <div className="col-span-3 flex flex-col items-start gap-3 font-[450]">
+          <h2 className="text-lg font-bold uppercase text-neutral-800 dark:text-neutral-100">
             Biography
           </h2>
           <p>
@@ -42,14 +42,16 @@ const Biography = () => {
         </div>
         <div className="col-span-3 flex h-1/2 flex-col gap-12">
           <div className="flex flex-col items-end gap-3 text-right">
-            <h2 className="text-lg font-bold uppercase text-neutral-800">
+            <h2 className="text-lg font-bold uppercase text-neutral-800 dark:text-neutral-100">
               Education
             </h2>
             <div>
-              <p className="font-bold">
+              <p className="font-semibold">
                 Bachelor of Engineering In Software Engineering
               </p>
-              <p>2018-2022 | Carleton University, Ottawa, ON</p>
+              <p className="font-[450]">
+                2018-2022 | Carleton University, Ottawa, ON
+              </p>
             </div>
           </div>
           <div className="flex items-center justify-end gap-14">

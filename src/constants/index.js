@@ -21,24 +21,34 @@ export const navLink = [
   },
 ];
 
-import { linkedinIcon, githubIcon, twitterIcon } from "@/assets/MediaIcon";
+import {
+  linkedinIcon,
+  githubIcon,
+  twitterIcon,
+  darkLinkedinIcon,
+  darkGithubIcon,
+  darkTwitterIcon,
+} from "@/assets/MediaIcon";
 export const mediaIcon = [
   {
     id: "linkein",
     href: "https://www.linkedin.com/in/winston-tn/",
-    icon: linkedinIcon,
+    lightIcon: linkedinIcon,
+    darkIcon: darkLinkedinIcon,
     name: "LinkedIn",
   },
   {
     id: "github",
     href: "https://github.com/winston-tn",
-    icon: githubIcon,
+    lightIcon: githubIcon,
+    darkIcon: darkGithubIcon,
     name: "GitHub",
   },
   {
     id: "twitter",
     href: "https://twitter.com/winston-tn",
-    icon: twitterIcon,
+    lightIcon: twitterIcon,
+    darkIcon: darkTwitterIcon,
     name: "Twitter",
   },
 ];
