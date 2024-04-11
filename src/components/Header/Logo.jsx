@@ -7,7 +7,7 @@ const Logo = () => {
       <Link
         href="/"
         passHref
-        className="font-dancing text-3xl font-extrabold text-black"
+        className="font-dancing text-3xl font-extrabold text-black dark:text-white"
       >
         Winston
       </Link>

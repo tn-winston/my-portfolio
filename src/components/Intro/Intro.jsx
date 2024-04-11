@@ -6,14 +6,15 @@ import profile from "../../../public/profileIntro.png";
 
 const Intro = () => {
   return (
-    <div className="relative flex h-screen w-full items-start overflow-hidden rounded-b-3xl">
+    <div className="relative flex h-screen w-full items-center overflow-hidden rounded-b-3xl">
       <Image
+        priority
         src={profile}
         alt="Profile Intro"
         height={585}
         className="self-end"
       />
-      <div className="absolute left-1/2 flex h-[82%] w-1/2 flex-col justify-center gap-6 text-wrap pr-24">
+      <div className="absolute left-1/2 flex flex-col justify-center gap-6 text-wrap pr-24">
         <AnimatedText text="Brushing Pixels to Life" />
         <p className="text-lg">
           As an innovative frontend developer and design aficionado, I am

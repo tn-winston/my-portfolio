@@ -25,7 +25,7 @@ const AnimatedText = ({ text }) => {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="flex flex-wrap items-center text-5xl font-semibold capitalize text-neutral-800"
+      className="flex flex-wrap items-center text-5xl font-semibold capitalize text-neutral-800 dark:text-neutral-100"
     >
       {text.split(" ").map((word, index) => (
         <motion.span variants={fadeInWord} key={index}>

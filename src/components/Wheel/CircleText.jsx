@@ -2,8 +2,13 @@ import React from "react";
 
 const CircleText = () => {
   return (
-    <div className="animate-slow-spin cursor-default text-xl font-medium">
-      <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <div className="animate-slow-spin cursor-default">
+      <svg
+        width="200"
+        height="200"
+        xmlns="http://www.w3.org/2000/svg"
+        className="fill-neutral-700 text-xl font-medium dark:fill-neutral-200"
+      >
         <defs>
           <path
             id="circlePath"
@@ -12,8 +17,8 @@ const CircleText = () => {
           />
         </defs>
         <text>
-          <textPath href="#circlePath" textLength="485">
-            Frontend Developer - UI/UX Designer -
+          <textPath href="#circlePath" textLength="490">
+            Frontend Developer - Design Engineer -
           </textPath>
         </text>
       </svg>

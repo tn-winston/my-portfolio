@@ -3,6 +3,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +13,11 @@ module.exports = {
     extend: {
       colors: {
         "light-theme": "#fafafa",
+        "dark-theme": "#121212",
+      },
+      backgroundImage: {
+        lighted: "linear-gradient(to bottom, #6091E8 0%, #A6BEE7 100%)",
+        test: "linear-gradient(to right, #ece9e6, #ffffff)",
       },
       fontFamily: {
         montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],

@@ -4,7 +4,7 @@ const year = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <footer className="flex w-full snap-end justify-center gap-60 rounded-t-3xl border-t border-neutral-200 bg-pink-50 py-1.5 font-medium text-neutral-500">
+    <footer className="flex w-full snap-end justify-center gap-60 rounded-t-3xl border-t border-neutral-200 bg-neutral-100 py-1.5 font-medium text-neutral-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400">
       <span>{year}&nbsp;&copy;&nbsp;All Rights Reserved</span>
       <span>
         Email:&nbsp;
