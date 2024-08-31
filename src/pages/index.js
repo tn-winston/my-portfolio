@@ -1,15 +1,16 @@
 import React from "react";
 import Intro from "@/components/Intro/Intro";
-import Biography from "@/components/About/Biography";
+import About from "@/components/About/About";
 import Experience from "@/components/Experience/Experience";
 import Projects from "@/components/Projects/Projects";
 
 const sections = [
   <Intro key="intro" />,
-  <Biography key="bio" />,
+  <About key="about" />,
   <Experience key="exp" />,
   <Projects key="projects" />,
 ];
+
 export default function Home() {
   return (
     <div className="flex flex-col gap-20">

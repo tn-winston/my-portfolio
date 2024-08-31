@@ -5,16 +5,16 @@ import HireMeWheel from "@/components/Wheel/HireMeWheel";
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <main className="flex flex-col">
       <NavBar />
-      <main>
+      <div>
         {children}
-        <div className="fixed bottom-10 right-12">
+        <div className="bottom-2 hidden xl:fixed xl:right-6 xl:block 2xl:right-2">
           <HireMeWheel />
         </div>
-      </main>
+      </div>
       <Footer />
-    </>
+    </main>
   );
 };
 

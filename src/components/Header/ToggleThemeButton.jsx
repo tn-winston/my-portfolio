@@ -1,10 +1,8 @@
 import React from "react";
-import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
-import DarkIcon from "../../../public/darkThemeIcon.svg";
-import LightIcon from "../../../public/lightThemeIcon.svg";
-import Image from "next/image";
+import { LightModeIcon, DarkModeIcon } from "../IconFactory";
 
 const buttonVariants = {
   initial: { opacity: 1 },
@@ -24,7 +22,8 @@ const ToggleThemeButton = () => {
   }, []);
 
   if (!mounted) {
-    return <button>X</button>;
+    return;
+    ("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
   }
 
   return (
@@ -34,13 +33,9 @@ const ToggleThemeButton = () => {
       initial="initial"
       whileHover="hover"
       whileTap="tap"
+      className="flex h-8 w-8 items-center justify-center rounded-lg text-xl"
     >
-      <Image
-        src={theme === "dark" ? DarkIcon : LightIcon}
-        alt={theme === "dark" ? "Dark Icon" : "Light Icon"}
-        width={22}
-        height={22}
-      />
+      {theme === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
     </motion.button>
   );
 };

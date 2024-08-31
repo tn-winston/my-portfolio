@@ -7,11 +7,11 @@ import {
 } from "framer-motion";
 
 const AnimatedNumber = ({ value }) => {
-  const ref = useRef(null);
+  const countRef = useRef(null);
   const mValue = useMotionValue(0);
   const sValue = useSpring(mValue, { stiffness: 100, damping: 30 });
 
-  const isInView = useInView(ref);
+  const isInView = useInView(countRef);
 
   useEffect(() => {
     if (isInView) {
@@ -21,12 +21,12 @@ const AnimatedNumber = ({ value }) => {
   }, [isInView, mValue, value]);
 
   useMotionValueEvent(sValue, "change", (latestValue) => {
-    if (ref.current && latestValue.toFixed() <= value) {
-      ref.current.textContent = latestValue.toFixed();
+    if (countRef.current && latestValue.toFixed() <= value) {
+      countRef.current.textContent = latestValue.toFixed();
     }
   });
 
-  return <span ref={ref}> </span>;
+  return <span ref={countRef} />;
 };
 
 export default AnimatedNumber;

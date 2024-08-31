@@ -7,7 +7,7 @@ const externalEffect = {
   light: {
     initial: {
       backgroundColor: "#1C1D20",
-      color: "#FFFFFF",
+      color: "#E5E5E5",
     },
     whileHover: {
       y: -4,
@@ -20,7 +20,7 @@ const externalEffect = {
   dark: {
     initial: {
       backgroundColor: "#00B8FC",
-      color: "#121212",
+      color: "#404040",
     },
     whileHover: {
       y: -4,
@@ -54,7 +54,7 @@ const AnimatedButton = ({ href, target, children }) => {
       href={href}
       passHref
       target={target}
-      className="relative flex h-12 w-44 items-center justify-center overflow-hidden rounded-xl text-xl font-medium"
+      className="relative flex h-12 w-44 items-center justify-center overflow-hidden rounded-xl text-lg"
       variants={theme === "dark" ? externalEffect.dark : externalEffect.light}
       initial="initial"
       whileHover="whileHover"

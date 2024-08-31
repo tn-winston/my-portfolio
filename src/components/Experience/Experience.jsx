@@ -1,36 +1,41 @@
 import React from "react";
-import { techIcon, workExp } from "@/constants";
-import TechIcon from "./TechIcon";
-import WorkExp from "./WorkExp";
+import Skills from "./Skills";
+import WorkSum from "./WorkSum";
 import AnimatedText from "../AnimatedText";
 
 const Experience = () => {
   return (
     <section
       id="experience"
-      className="flex h-screen w-full flex-col items-center pt-[10vh]"
+      className="flex min-h-screen w-full flex-col items-center 2xl:h-screen 2xl:pt-[10vh]"
     >
-      <div className="mb-12 mt-6">
+      <div className="flex h-screen w-full snap-start flex-col items-center px-10 pt-[10vh] 2xl:hidden 2xl:snap-none">
+        <div className="mb-12 mt-6">
+          <AnimatedText text="Experience" />
+        </div>
+        <ul className="flex h-full w-full flex-col gap-6 ">
+          <WorkSum />
+        </ul>
+      </div>
+      <div className="flex h-screen w-full snap-start flex-col items-center px-12 pt-[10vh] 2xl:hidden 2xl:snap-none">
+        <div className="mb-12 mt-6">
+          <AnimatedText text="Skills" />
+        </div>
+        <div className="grid w-full grid-cols-3 justify-center gap-8 ">
+          <Skills />
+        </div>
+      </div>
+
+      <div className="hidden 2xl:mb-12 2xl:mt-6 2xl:block">
         <AnimatedText text="Experience" />
       </div>
-      <div className="grid w-full grow grid-cols-2 gap-20 px-36">
+      <div className="hidden 2xl:grid 2xl:w-full 2xl:grow 2xl:grid-cols-2 2xl:gap-20 2xl:px-36">
         <div className="col-span-1 grid grid-cols-4 justify-center gap-4">
-          {techIcon.map((item) => (
-            <TechIcon key={item.id} src={item.icon} name={item.name} />
-          ))}
+          <Skills />
         </div>
-        <div className="col-span-1 h-1/2 w-full">
-          <ul className="flex h-full flex-col justify-between">
-            {workExp.map((exp, index) => (
-              <WorkExp
-                key={index}
-                title={exp.title}
-                company={exp.company}
-                time={exp.time}
-              />
-            ))}
-          </ul>
-        </div>
+        <ul className="col-span-1 flex h-1/2 flex-col justify-between">
+          <WorkSum />
+        </ul>
       </div>
     </section>
   );

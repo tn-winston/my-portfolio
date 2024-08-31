@@ -10,18 +10,26 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1440px",
+    },
     extend: {
       colors: {
         "light-theme": "#fafafa",
         "dark-theme": "#121212",
+        available: "#22c55e",
       },
       backgroundImage: {
-        lighted: "linear-gradient(to bottom, #6091E8 0%, #A6BEE7 100%)",
-        test: "linear-gradient(to right, #ece9e6, #ffffff)",
+        "midnight-city": "linear-gradient(to right, #232526, #414345)",
+        mystic: "linear-gradient(to right, #D7DDE8, #757F9A)",
       },
       fontFamily: {
-        montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
-        dancing: ["Dancing Script", "cursive"],
+        inter: ["var(--font-inter)"],
+        dancingScript: ["var(--font-dancingScript)"],
       },
       animation: {
         "slow-spin": "spin 10s linear infinite",

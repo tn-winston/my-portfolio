@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import profile from "../../../public/profile_picture.png";
 import { motion } from "framer-motion";
-import profile from "../../../public/profileFrame.jpg";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
@@ -33,7 +33,7 @@ const ProfileFrame = () => {
   }, [theme]);
 
   return (
-    <div className="relative h-[95%] w-full">
+    <div className="relative h-2/3 w-2/3 md:w-[45%] xl:h-[80%] xl:w-full 2xl:h-[95%]">
       <motion.div
         key={`${resetKey}-1`}
         variants={theme === "dark" ? jshineGlow.dark : jshineGlow.light}
@@ -50,8 +50,13 @@ const ProfileFrame = () => {
         className="absolute inset-2 z-20 rounded-2xl"
         transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
       />
-      <div className="absolute inset-3 z-30 flex items-end justify-center overflow-hidden rounded-2xl bg-white">
-        <Image src={profile} alt="Profile Picture" priority />
+      <div className="absolute inset-3 z-30 flex items-end justify-center overflow-hidden rounded-2xl bg-light-theme dark:bg-dark-theme">
+        <Image
+          src={profile}
+          alt="Profile Picture"
+          fill
+          style={{ objectFit: "cover" }}
+        />
       </div>
     </div>
   );
