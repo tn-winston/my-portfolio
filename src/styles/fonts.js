@@ -6,7 +6,7 @@ export const inter = Inter({
   variable: "--font-inter",
 });
 
-export const DancingScript = Dancing_Script({
+export const dancingScript = Dancing_Script({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-dancingScript",

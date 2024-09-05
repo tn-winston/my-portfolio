@@ -8,7 +8,7 @@ import { navLink } from "@/constants";
 const NavBar = () => {
   return (
     <header className="fixed top-0 z-50 h-[10vh] w-full bg-light-theme dark:bg-dark-theme">
-      <div className="flex h-full w-full items-center justify-between px-10 md:px-12 xl:hidden">
+      <div className="flex h-full w-full items-center justify-between px-10 md:px-12 lg:px-14 xl:hidden">
         <div className="absolute left-1/2 -translate-x-1/2 ">
           <Logo />
         </div>
@@ -16,7 +16,7 @@ const NavBar = () => {
         <ToggleThemeButton />
       </div>
 
-      <div className="hidden xl:flex xl:h-full xl:w-full xl:items-center xl:justify-between xl:px-24">
+      <div className="hidden xl:flex xl:h-full xl:w-full xl:items-center xl:justify-between xl:px-16 2xl:px-24">
         <Logo />
         <nav className="flex gap-8">
           {navLink.map((item) => (

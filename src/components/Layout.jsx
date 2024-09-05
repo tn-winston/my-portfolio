@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <NavBar />
       <div>
         {children}
-        <div className="bottom-2 hidden xl:fixed xl:right-6 xl:block 2xl:right-2">
+        <div className="hidden xl:fixed xl:bottom-2 xl:right-2 xl:block">
           <HireMeWheel />
         </div>
       </div>

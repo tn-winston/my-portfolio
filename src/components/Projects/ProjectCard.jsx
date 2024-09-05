@@ -38,13 +38,13 @@ const ProjectCard = ({
     }
   };
   return (
-    <div className="grid h-full w-full grid-rows-5 bg-mystic dark:bg-midnight-city lg:grid-cols-2 lg:grid-rows-1">
-      <div className="row-span-2 flex items-center justify-center lg:col-span-1">
+    <div className="flex h-full w-full flex-col overflow-y-auto bg-mystic pt-8 dark:bg-midnight-city lg:grid lg:grid-cols-2 lg:grid-rows-1">
+      <div className="flex items-center justify-center">
         <Link
           href={link}
           target="_blank"
           passHref
-          className="relative h-[80%] w-[90%]"
+          className="relative flex h-[150px] w-[90%] lg:h-[250px]"
         >
           <Image
             src={banner}
@@ -54,19 +54,20 @@ const ProjectCard = ({
           />
         </Link>
       </div>
-
-      <div className="row-span-3 m-4 flex flex-col  justify-center gap-2 lg:col-span-1 lg:row-span-1">
-        <div className="text-xl font-medium text-[#cd5c84]">{type}</div>
+      <div className="flex flex-col justify-center gap-2 p-4 lg:col-span-1 lg:row-span-1">
+        <div className="text-lg font-medium text-[#cd5c84] lg:text-xl">
+          {type}
+        </div>
         <Link href={link}>
-          <span className="group relative text-4xl font-semibold">
+          <span className="group relative text-2xl font-semibold lg:text-4xl">
             {title}
             <span className=" absolute -bottom-[2px] left-0 h-0.5 w-0  bg-neutral-700 transition-all duration-500 ease-in-out group-hover:w-[100%] dark:bg-neutral-200" />
           </span>
         </Link>
-        {description}
+        <p className="text-sm lg:text-base">{description}</p>
         <div className="flex items-end gap-8 pt-2">
           <AnimatedButton href={link} target="_blank">
-            <span>Demo</span>
+            <span className="text-sm lg:text-base">Demo</span>
           </AnimatedButton>
           {hasRepo && <MediaIcon href={repo} src={iconSrc()} name="Github" />}
         </div>

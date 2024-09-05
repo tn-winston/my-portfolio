@@ -17,18 +17,19 @@ const fadeInWord = {
   animate: { opacity: 1, transition: { duration: 0.5 } },
 };
 
-const AnimatedText = ({ text }) => {
+const AnimatedText = ({ text, fontSize }) => {
   return (
     <motion.div
       variants={fadeInContainer}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="flex flex-wrap justify-center text-5xl font-semibold capitalize text-neutral-800 dark:text-neutral-100 "
+      className={`flex flex-wrap justify-center ${fontSize} font-semibold capitalize text-neutral-800 dark:text-neutral-100`}
     >
-      {text.split(" ").map((word, index) => (
+      {text.split(" ").map((word, index, array) => (
         <motion.span variants={fadeInWord} key={index}>
-          {word}&nbsp;
+          {word}
+          {index < array.length - 1 && <>&nbsp;</>}
         </motion.span>
       ))}
     </motion.div>

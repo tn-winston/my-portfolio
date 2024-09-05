@@ -64,9 +64,12 @@ const Carousel = () => {
 
   return (
     <>
-      <div ref={inViewRef1} className="block h-[60vh] md:hidden">
-        <div ref={emblaRef1} className="h-full overflow-hidden">
-          <div className="flex h-full w-[50vw] flex-col">
+      <div
+        ref={inViewRef1}
+        className="h-[400px] w-[50vw] md:h-[600px] lg:h-[700px] xl:hidden"
+      >
+        <div ref={emblaRef1} className="h-full w-full overflow-hidden">
+          <div className="flex h-full w-full flex-col">
             {/* {[...Array(15).keys()].map((x, idx) => ( */}
             {projects.map((project, idx) => (
               <div
@@ -88,13 +91,13 @@ const Carousel = () => {
         </div>
       </div>
 
-      <div ref={inViewRef2} className="hidden md:block md:h-[40vh]">
-        <div ref={emblaRef2} className="h-full overflow-hidden">
-          <div className="flex h-full w-[75vw] ">
+      <div ref={inViewRef2} className="hidden w-[75vw] xl:block xl:h-[320px]">
+        <div ref={emblaRef2} className="h-full w-full overflow-hidden">
+          <div className="flex h-full w-full">
             {projects.map((project, idx) => (
               <div
                 key={`${idx}-2`}
-                className="mx-6 h-full w-2/3 shrink-0 overflow-hidden rounded-md border border-neutral-300 shadow-md shadow-neutral-300/50 dark:border-neutral-600 dark:shadow-neutral-600/50 lg:w-3/5 xl:w-1/2 2xl:w-[45%] "
+                className="mx-6 h-full w-1/2 shrink-0 overflow-hidden rounded-md border border-neutral-300 shadow-md shadow-neutral-300/50 dark:border-neutral-600 dark:shadow-neutral-600/50 "
               >
                 <PopoverCard
                   banner={project.banner}

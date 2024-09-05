@@ -54,7 +54,7 @@ const AnimatedButton = ({ href, target, children }) => {
       href={href}
       passHref
       target={target}
-      className="relative flex h-12 w-44 items-center justify-center overflow-hidden rounded-xl text-lg"
+      className="relative flex h-12 w-40 items-center justify-center overflow-hidden rounded-xl"
       variants={theme === "dark" ? externalEffect.dark : externalEffect.light}
       initial="initial"
       whileHover="whileHover"

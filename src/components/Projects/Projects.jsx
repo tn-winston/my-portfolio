@@ -4,15 +4,12 @@ import Carousel from "./Carousel";
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="flex h-screen w-full flex-col items-center pt-[10vh] md:gap-8"
-    >
-      <div className="mb-12 mt-6">
-        <AnimatedText text="Projects" />
+    <div className="flex min-h-screen w-full flex-col items-center pt-[10vh] md:gap-8">
+      <div className="my-10">
+        <AnimatedText text="Projects" fontSize="text-3xl md:text-4xl" />
       </div>
       <Carousel />
-    </section>
+    </div>
   );
 };
 

@@ -25,7 +25,7 @@ const externalEffect = {
 const internalEffect = {
   light: {
     initial: {
-      backgroundImage: "linear-gradient(45deg, #1abcfe, #161b1c)",
+      backgroundImage: "linear-gradient(45deg, #1ABCFE, #161B1C)",
       opacity: 0,
     },
     whileHover: {
@@ -37,7 +37,7 @@ const internalEffect = {
   },
   dark: {
     initial: {
-      backgroundImage: "linear-gradient(to right, #20002c, #cbb4d4)",
+      backgroundImage: "linear-gradient(to right, #20002C, #CBB4D4)",
       opacity: 0,
     },
     whileHover: {
@@ -56,13 +56,13 @@ const HireButton = () => {
     <MotionLink
       key={key}
       href="mailto:tn.winston@outlook.com"
-      className="relative flex h-[100px] w-[100px] items-center justify-center overflow-hidden rounded-full text-lg"
+      className="relative flex h-[100px] w-[100px] items-center justify-center overflow-hidden rounded-full"
       variants={theme === "dark" ? externalEffect.dark : externalEffect.light}
       initial="initial"
       whileHover="whileHover"
       whileTap="whileTap"
     >
-      <span className="absolute z-20">Hire Me</span>
+      <span className="relative z-20 text-lg">Hire Me</span>
       <motion.span
         variants={theme === "dark" ? internalEffect.dark : internalEffect.light}
         className="absolute z-10 h-[80%] w-[25%] blur-[20px] brightness-125"

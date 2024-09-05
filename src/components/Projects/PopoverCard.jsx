@@ -37,16 +37,22 @@ const PopoverCard = ({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-dark-theme/25 dark:bg-light-theme/25"
+              className="fixed inset-0 bg-dark-theme/90 dark:bg-light-theme/90"
             />
             <DialogPanel
               as={motion.div}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed left-1/2 top-1/2 h-[70vh] w-[80vw] -translate-x-1/2 -translate-y-[40%]  lg:h-[50vh] lg:w-[80vw] lg:-translate-y-1/2"
+              className="fixed left-1/2 top-1/2 h-[500px] w-[80vw] -translate-x-1/2 -translate-y-1/2 md:h-[450px] lg:w-[80vw]"
             >
-              <div className="h-full w-full overflow-hidden rounded-md border border-neutral-300 shadow-md shadow-neutral-300/50 dark:border-neutral-600 dark:shadow-neutral-600/50 ">
+              <button
+                className="absolute left-0 top-0 flex h-8 w-8 items-center justify-center rounded-lg text-xl hover:bg-[#CCD0D9] hover:transition-all hover:ease-in-out lg:left-4 lg:top-4 lg:text-3xl"
+                onClick={() => setIsOpen(false)}
+              >
+                <BackIcon />
+              </button>
+              <div className="h-full w-full overflow-hidden rounded-md border border-neutral-300 shadow-md shadow-neutral-300/50 dark:border-neutral-600 dark:shadow-neutral-600/50">
                 <ProjectCard
                   banner={banner}
                   link={link}
@@ -57,13 +63,6 @@ const PopoverCard = ({
                   repo={repo}
                 />
               </div>
-
-              <button
-                className="absolute left-0 top-0 flex h-8 w-8 -translate-y-full items-center justify-center rounded-lg text-xl hover:bg-[#CCD0D9] hover:transition-all hover:ease-in-out lg:text-3xl"
-                onClick={() => setIsOpen(false)}
-              >
-                <BackIcon />
-              </button>
             </DialogPanel>
           </Dialog>
         )}

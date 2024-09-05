@@ -12,7 +12,7 @@ const Stats = () => {
       </div>
       <div className="flex flex-col items-center justify-center">
         <span className="text-7xl font-bold">
-          <AnimatedNumber value={20} />+
+          <AnimatedNumber value={30} />+
         </span>
         <h2 className="font-medium">Completed Projects</h2>
       </div>

@@ -31,13 +31,13 @@ export const projects = [
     repo: "",
   },
   {
-    banner: securitySystem,
-    link: "https://youtu.be/QjrxmwsbPCssg",
-    type: "Security System",
-    title: "Biometric Door Lock",
-    hasRepo: false,
+    banner: bank,
+    link: "https://bank-modern-hoo.vercel.app/",
+    type: "Website",
+    title: "Modern Bank Website",
     description:
-      "The project integrates a cutting-edge biometric authentication system into a door lock, replacing traditional keys with fingerprint and facial recognition. This enhances security, streamlines access, and modernizes the overall system.",
-    repo: "",
+      "A contemporary banking website designed to introduce the bank to customers by showcasing its features and benefits in a user-friendly and engaging manner. The website serves as a digital gateway for potential customers to explore the bank's services, offerings, and advantages.",
+    hasRepo: true,
+    repo: "https://github.com/winston-tn/bank-modern",
   },
 ];
