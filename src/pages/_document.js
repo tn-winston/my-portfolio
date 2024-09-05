@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html
       lang="en"
-      className="snap-y snap-mandatory overflow-y-scroll scroll-smooth"
+      className="snap-y snap-proximity overflow-y-scroll scroll-smooth"
     >
       <Head>
         <link
