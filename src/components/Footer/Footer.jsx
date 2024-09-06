@@ -35,10 +35,10 @@ const Footer = () => {
       </span>
       <span>{year}&nbsp;&copy;&nbsp;All Rights Reserved</span>
       <div className="flex w-full items-center justify-center gap-4">
-        <span className="relative flex items-center justify-center ">
-          <span className="h-2 w-2 rounded-full bg-available" />
-          <span className="absolute h-2 w-2 animate-ping rounded-full bg-available opacity-75" />
-        </span>
+        <div className="relative flex items-center justify-center ">
+          <div className="h-2 w-2 rounded-full bg-available" />
+          <div className="absolute h-2 w-2 animate-ping rounded-full bg-available opacity-75" />
+        </div>
         <span className="text-available">Available for Work</span>
       </div>
       <a
