@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import MediaIcon from "../MediaIcon";
 import { mediaIcon } from "@/constants";
 import { useTheme } from "next-themes";
@@ -35,18 +36,17 @@ const Footer = () => {
       </span>
       <span>{year}&nbsp;&copy;&nbsp;All Rights Reserved</span>
       <div className="flex w-full items-center justify-center gap-4">
-        <div className="relative flex items-center justify-center ">
-          <div className="h-2 w-2 rounded-full bg-available" />
-          <div className="absolute h-2 w-2 animate-ping rounded-full bg-available opacity-75" />
-        </div>
+        <span className="relative h-2 w-2 rounded-full bg-available">
+          <span className="absolute h-2 w-2 animate-ping rounded-full bg-available opacity-75" />
+        </span>
         <span className="text-available">Available for Work</span>
       </div>
-      <a
+      <Link
         href="mailto:winston.tn@outlook.com"
         className="hover:text-neutral-800 dark:hover:text-neutral-100"
       >
         tn.winston@outlook.com
-      </a>
+      </Link>
       <div className="mt-2 flex gap-6">
         {mediaIcon.map((item) => (
           <MediaIcon
