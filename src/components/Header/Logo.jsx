@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import LightLogo from "../../../public/light-logo.png";
 import DarkLogo from "../../../public/dark-logo.png";
@@ -21,14 +20,14 @@ const Logo = () => {
 
   return (
     <>
-      <Link href="/" passHref>
+      <a href="/" passHref>
         <Image
           src={theme == "dark" ? DarkLogo : LightLogo}
           alt="logo"
           height={40}
           width="auto"
         />
-      </Link>
+      </a>
     </>
   );
 };

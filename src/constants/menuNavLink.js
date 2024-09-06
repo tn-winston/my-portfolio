@@ -1,7 +1,7 @@
 export const menuNavLink = [
   {
     id: "home",
-    href: "/",
+    href: "/#intro",
     title: "Home",
   },
   {

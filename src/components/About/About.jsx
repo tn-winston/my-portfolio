@@ -17,7 +17,7 @@ const About = () => {
         </div>
         <ProfileFrame />
       </div>
-      <div className="flex min-h-screen w-full snap-start flex-col px-12 pt-[20vh] md:gap-20 lg:gap-32 xl:hidden">
+      <div className="flex min-h-screen w-full snap-start flex-col justify-center px-12 pt-[10vh] md:gap-20 lg:gap-32 xl:hidden">
         <Biography />
         <div className="hidden md:flex md:flex-col md:gap-12 lg:gap-24">
           <div className="flex flex-col">

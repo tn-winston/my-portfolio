@@ -29,15 +29,15 @@ const Footer = () => {
     }
   };
   return (
-    <footer className="flex w-full snap-end flex-col items-center justify-center gap-1 rounded-t-3xl border-t border-neutral-200 bg-neutral-100 py-6 font-medium text-neutral-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400">
+    <footer className="flex w-full flex-col items-center justify-center gap-1 rounded-t-3xl border-t border-neutral-200 bg-neutral-100 py-6 font-medium text-neutral-500 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-400 xl:snap-end">
       <span className="cursor-default font-dancingScript text-3xl hover:animate-wiggle hover:text-neutral-800 dark:hover:text-neutral-100">
         Winston
       </span>
       <span>{year}&nbsp;&copy;&nbsp;All Rights Reserved</span>
       <div className="flex w-full items-center justify-center gap-4">
         <span className="relative flex items-center justify-center ">
-          <span className=" bg-available absolute z-20 h-2 w-2 rounded-full" />
-          <span className=" bg-available absolute z-10 h-2 w-2 animate-ping rounded-full opacity-75" />
+          <span className=" absolute z-20 h-2 w-2 rounded-full bg-available" />
+          <span className=" absolute z-10 h-2 w-2 animate-ping rounded-full bg-available opacity-75" />
         </span>
         <span className="text-available">Available for Work</span>
       </div>

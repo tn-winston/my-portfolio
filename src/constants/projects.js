@@ -8,7 +8,7 @@ export const projects = [
     description:
       "Realtor is a modern real estate web application developed using Next.js, React, and ChakraUI. The platform is tailored to assist users in exploring available properties for both rent and sale. With its diverse range of filters, it streamlines the search experience, all while maintaining a responsive and user-centric design.",
     hasRepo: true,
-    repo: "https://github.com/winston-tn/real-estate",
+    repo: "https://github.com/tn-winston/real-estate",
   },
   {
     banner: bank,
@@ -18,7 +18,7 @@ export const projects = [
     description:
       "A contemporary banking website designed to introduce the bank to customers by showcasing its features and benefits in a user-friendly and engaging manner. The website serves as a digital gateway for potential customers to explore the bank's services, offerings, and advantages.",
     hasRepo: true,
-    repo: "https://github.com/winston-tn/bank-modern",
+    repo: "https://github.com/tn-winston/bank-modern",
   },
   {
     banner: securitySystem,
@@ -38,6 +38,6 @@ export const projects = [
     description:
       "A contemporary banking website designed to introduce the bank to customers by showcasing its features and benefits in a user-friendly and engaging manner. The website serves as a digital gateway for potential customers to explore the bank's services, offerings, and advantages.",
     hasRepo: true,
-    repo: "https://github.com/winston-tn/bank-modern",
+    repo: "https://github.com/tn-winston/bank-modern",
   },
 ];

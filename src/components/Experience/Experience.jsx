@@ -19,9 +19,7 @@ const Experience = () => {
           <div className="my-10">
             <AnimatedText text="Experience" fontSize="text-3xl md:text-4xl" />
           </div>
-          <ul className="flex flex-col gap-6 ">
-            <WorkSum />
-          </ul>
+          <WorkSum />
         </div>
       </div>
       <div className="flex min-h-screen w-full snap-start flex-col items-center px-6 pt-[10vh] md:px-12 lg:hidden">
@@ -33,7 +31,7 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className="hidden xl:flex xl:min-h-screen xl:w-full xl:snap-start xl:flex-col xl:items-center xl:px-24 xl:pt-[10vh]">
+      <div className="hidden xl:flex xl:min-h-screen xl:w-full xl:flex-col xl:items-center xl:px-24 xl:pt-[10vh]">
         <div className="my-10">
           <AnimatedText text="Experience" fontSize="text-4xl" />
         </div>
@@ -41,9 +39,9 @@ const Experience = () => {
           <div className="col-span-1 grid grid-cols-4 justify-center gap-x-4 gap-y-8">
             <Skills />
           </div>
-          <ul className="col-span-1 flex h-1/2 flex-col justify-between">
+          <div className="col-span-1">
             <WorkSum />
-          </ul>
+          </div>
         </div>
       </div>
     </>
