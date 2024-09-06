@@ -17,7 +17,7 @@ export const mediaIcon = [
   },
   {
     id: "github",
-    href: "https://github.com/winston-tn",
+    href: "https://github.com/tn-winston",
     lightIcon: githubIcon,
     darkIcon: darkGithubIcon,
     name: "GitHub",

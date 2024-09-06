@@ -8,9 +8,9 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 const Intro = () => {
   return (
     <div
-      className="flex min-h-screen w-full flex-col items-center gap-4 pt-[10vh]
-                 md:gap-5 lg:gap-6 
-                 xl:flex-row xl:gap-0 xl:overflow-hidden xl:rounded-b-3xl"
+      className="flex min-h-screen w-full flex-col items-center gap-4 overflow-y-scroll
+                 pt-[10vh] md:gap-5 lg:gap-6
+                 xl:relative xl:flex-row xl:gap-0 xl:overflow-hidden xl:rounded-b-3xl"
     >
       <div
         className="relative h-[250px] w-full overflow-hidden rounded-b-3xl 
@@ -18,6 +18,7 @@ const Intro = () => {
                   xl:h-auto xl:self-end"
       >
         <Image
+          priority
           src={profile_res}
           alt="Profile Intro"
           fill
@@ -25,6 +26,7 @@ const Intro = () => {
           className="block xl:hidden"
         />
         <Image
+          priority
           src={profile}
           alt="Profile Intro"
           height={585}

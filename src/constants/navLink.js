@@ -1,7 +1,7 @@
 export const navLink = [
   {
     id: "home",
-    href: "/",
+    href: "/#intro",
     title: "Home",
   },
   {

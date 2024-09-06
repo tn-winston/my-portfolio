@@ -4,7 +4,7 @@ import { workExp } from "@/constants";
 
 const WorkSum = () => {
   return (
-    <>
+    <div className="flex flex-col gap-6 ">
       {workExp.map((exp, index) => (
         <WorkExp
           key={index}
@@ -13,7 +13,7 @@ const WorkSum = () => {
           time={exp.time}
         />
       ))}
-    </>
+    </div>
   );
 };
 
