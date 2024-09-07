@@ -29,7 +29,7 @@ const Intro = () => {
           priority
           src={profile}
           alt="Profile Intro"
-          height={585}
+          height={600}
           width="auto"
           className="hidden xl:block"
         />

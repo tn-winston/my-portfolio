@@ -20,7 +20,7 @@ const Logo = () => {
 
   return (
     <>
-      <a href="/" passHref>
+      <a href="/">
         <Image
           src={theme == "dark" ? DarkLogo : LightLogo}
           alt="logo"

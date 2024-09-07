@@ -16,16 +16,21 @@ const sections = [
 
 export default function Home() {
   return (
-    <div className="flex h-screen w-full snap-y snap-proximity flex-col gap-10 overflow-y-scroll scroll-smooth xl:snap-mandatory">
+    <div className="flex h-screen snap-y snap-proximity flex-col gap-10 overflow-x-hidden overflow-y-scroll scroll-smooth xl:snap-mandatory">
       <NavBar />
+
       {sections.map((component, idx) => (
-        <section key={component.key} className="snap-start" id={component.key}>
+        <section
+          key={component.key}
+          className="relative snap-start"
+          id={component.key}
+        >
           {component}
+          <div className="hidden xl:absolute xl:bottom-2 xl:right-2 xl:block">
+            <HireMeWheel />
+          </div>
         </section>
       ))}
-      <div className="hidden xl:fixed xl:bottom-2 xl:right-2 xl:block">
-        <HireMeWheel />
-      </div>
       <Footer />
     </div>
   );

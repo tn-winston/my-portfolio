@@ -66,7 +66,7 @@ const Carousel = () => {
     <>
       <div
         ref={inViewRef1}
-        className="h-[400px] w-[50vw] md:h-[600px] lg:h-[700px] xl:hidden"
+        className="h-[400px] w-[50%] md:h-[600px] lg:h-[700px] xl:hidden"
       >
         <div ref={emblaRef1} className="h-full w-full overflow-hidden">
           <div className="flex h-full w-full flex-col">
@@ -91,7 +91,7 @@ const Carousel = () => {
         </div>
       </div>
 
-      <div ref={inViewRef2} className="hidden w-[75vw] xl:block xl:h-[320px]">
+      <div ref={inViewRef2} className="hidden xl:block xl:h-[320px] xl:w-[75%]">
         <div ref={emblaRef2} className="h-full w-full overflow-hidden">
           <div className="flex h-full w-full">
             {projects.map((project, idx) => (

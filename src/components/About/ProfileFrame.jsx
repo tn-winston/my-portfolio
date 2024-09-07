@@ -37,7 +37,8 @@ const ProfileFrame = () => {
       className="relative h-[400px] w-2/3 
                     md:h-[600px] md:w-1/2 
                     lg:h-[800px] lg:w-[50%] 
-                    xl:h-[95%] xl:w-full"
+                    xl:h-[95%] xl:w-full
+                    2xl:aspect-[0.83]"
     >
       <motion.div
         key={`${resetKey}-1`}

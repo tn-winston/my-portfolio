@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <ThemeProvider attribute="class" defaultTheme="light">
         <div
-          className={`${inter.variable} ${dancingScript.variable} bg-light-theme font-inter text-sm text-neutral-700 dark:bg-dark-theme dark:text-neutral-200 lg:text-base`}
+          className={`${inter.variable} ${dancingScript.variable} m-auto max-w-[1920px] bg-light-theme font-inter text-sm text-neutral-700 dark:bg-dark-theme dark:text-neutral-200 lg:text-base`}
         >
           <Component {...pageProps} />
         </div>
