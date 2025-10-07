@@ -49,7 +49,7 @@ const Intro = () => {
                       lg:px-16 lg:text-xl
                       xl:pl-0 xl:pr-24 xl:text-left"
         >
-          As an innovative frontend&nbsp;developer and design&nbsp;engineer, I
+          As an innovative frontend&nbsp;developer and product&nbsp;engineer, I
           specialize in transforming conceptual ideas into intuitive, aesthetic,
           and user&#8209;centered web&nbsp;applications. Explore my latest
           projects and designs to experience the seamless fusion of React

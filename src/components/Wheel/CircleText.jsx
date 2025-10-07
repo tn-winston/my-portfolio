@@ -17,7 +17,7 @@ const CircleText = () => (
       </defs>
       <text>
         <textPath href="#circlePath" textLength="490">
-          Frontend Developer - Design Engineer -
+          Frontend Developer - Software Engineer -
         </textPath>
       </text>
     </svg>
